@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 4.1 SEO & Meta -->
+    <title>Александр Кудашкин | Оператор и режиссёр монтажа</title>
+    <meta name="description" content="Профессиональная видеосъёмка: свадьбы, реклама, интервью, корпоративы. 20 лет опыта, 10 000+ проектов. Кинематографичный подход и быстрые сроки.">
+    <meta name="keywords" content="оператор москва, видеосъемка свадьбы, реклама, интервью, корпоратив, монтаж">
+    <meta property="og:title" content="Александр Кудашкин | Оператор и режиссёр монтажа">
+    <meta property="og:description" content="Искусство видеть невидимое. Снимаю на cinema-камеры, работаю со светом и естественностью.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://picsum.photos/id/1005/1200/630?grayscale&fmt=webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Fonts: Montserrat (заголовки) + Inter (текст) с swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #141414;
+            --surface-hover: #1f1f1f;
+            --text: #e5e5e5;
+            --text-muted: #a3a3a3;
+            --accent: #d4af37;
+            --border: #2a2a2a;
+            --radius: 6px;
+            --gap: 1.5rem;
+            --font-head: 'Montserrat', system-ui, sans-serif;
+            --font-body: 'Inter', system-ui, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+            a:hover {
+                opacity: 0.8;
+            }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        /* Typography & Animations */
+        h1, h2, h3 {
+            font-family: var(--font-head);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+            h2::after {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 3px;
+                background: var(--accent);
+                margin: 0.8rem auto 0;
+            }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+            .animate-on-scroll.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.9rem 1.8rem;
+            background: var(--accent);
+            color: #000;
+            font-family: var(--font-head);
+            font-weight: 600;
+            border-radius: var(--radius);
+            border: none;
+            cursor: pointer;
+            transition: 0.25s;
+            text-align: center;
+            min-height: 48px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.85rem;
+        }
+
+            .btn:hover {
+                background: #b8962a;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+            }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+        }
+
+            .btn-outline:hover {
+                background: var(--accent);
+                color: #000;
+            }
+
+        /* Header & Nav */
+        header {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-family: var(--font-head);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.03em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+            .nav-links a {
+                color: var(--text-muted);
+                font-weight: 500;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+            }
+
+                .nav-links a:hover {
+                    color: #fff;
+                }
+
+        /* Hero */
+        #hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, var(--bg) 70%);
+            position: relative;
+            overflow: hidden;
+        }
+
+            #hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                opacity: 0.5;
+            }
+
+            #hero p {
+                font-size: 1.1rem;
+                color: var(--text-muted);
+                margin-bottom: 2rem;
+                font-weight: 400;
+            }
+
+        /* Portfolio & Filters */
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.2rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            color: var(--text-muted);
+            font-family: var(--font-head);
+            font-weight: 500;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: 0.2s;
+            min-height: 40px;
+        }
+
+            .filter-btn:hover, .filter-btn.active {
+                background: var(--surface-hover);
+                border-color: var(--accent);
+                color: #fff;
+                box-shadow: 0 2px 8px rgba(212,175,55,0.15);
+            }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.8rem;
+        }
+
+        .portfolio-item {
+            background: var(--surface);
+            border-radius: var(--radius);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid var(--border);
+            transition: transform 0.3s;
+        }
+
+            .portfolio-item:hover {
+                transform: translateY(-5px);
+            }
+
+            .portfolio-item video {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                background: #111;
+            }
+
+        .portfolio-info {
+            padding: 1.2rem;
+        }
+
+            .portfolio-info h4 {
+                margin-bottom: 0.3rem;
+                font-family: var(--font-head);
+            }
+
+            .portfolio-info .client {
+                font-size: 0.85rem;
+                color: var(--text-muted);
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+
+            .portfolio-info .link-placeholder {
+                font-size: 0.8rem;
+                color: var(--accent);
+                border-bottom: 1px dashed var(--accent);
+                padding-bottom: 2px;
+            }
+
+        /* Clients */
+        .clients-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .client-logo {
+            padding: 0.8rem 1.5rem;
+            font-family: var(--font-head);
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--surface);
+            transition: 0.2s;
+        }
+
+            .client-logo:hover {
+                color: #fff;
+                border-color: var(--accent);
+            }
+
+        /* Reviews Carousel */
+        .reviews-carousel {
+            display: flex;
+            gap: 1.5rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 1rem;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+            .reviews-carousel::-webkit-scrollbar {
+                display: none;
+            }
+
+        .review-card {
+            min-width: 320px;
+            max-width: 320px;
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            scroll-snap-align: center;
+            flex-shrink: 0;
+        }
+
+        .stars {
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .review-name {
+            font-family: var(--font-head);
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* Career */
+        .timeline {
+            border-left: 2px solid var(--border);
+            margin-left: 1rem;
+            padding-left: 1.8rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+            .timeline-item::before {
+                content: '';
+                position: absolute;
+                left: -2.4rem;
+                top: 0.35rem;
+                width: 12px;
+                height: 12px;
+                background: var(--accent);
+                border-radius: 50%;
+                box-shadow: 0 0 0 4px var(--surface);
+            }
+
+        .year {
+            font-family: var(--font-head);
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        /* About & Stats */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-box {
+            background: var(--surface);
+            padding: 1.2rem;
+            text-align: center;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        .stat-num {
+            font-family: var(--font-head);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.3rem;
+        }
+
+        /* Gear */
+        .gear-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gear-item {
+            background: var(--surface);
+            padding: 1.2rem;
+            border-radius: var(--radius);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: 0.2s;
+        }
+
+            .gear-item:hover {
+                border-color: var(--accent);
+            }
+
+            .gear-item img {
+                margin-bottom: 1rem;
+                border-radius: var(--radius);
+            }
+
+            .gear-item h4 {
+                font-family: var(--font-head);
+                margin-bottom: 0.3rem;
+            }
+
+        /* Contact */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 0.9rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            color: #fff;
+            font-family: var(--font-body);
+            min-height: 48px;
+        }
+
+            input:focus, textarea:focus {
+                border-color: var(--accent);
+                outline: none;
+            }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+            white-space: nowrap;
+        }
+
+            .checkbox-group input[type="checkbox"] {
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                accent-color: var(--accent);
+                flex-shrink: 0;
+            }
+
+        .quick-contact {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .qr-box {
+            text-align: center;
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+            .qr-box p {
+                margin-bottom: 0.8rem;
+                font-size: 0.85rem;
+                color: var(--text-muted);
+            }
+
+        .qr-img {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 0.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            display: block;
+        }
+
+        .qr-link {
+            font-size: 0.75rem;
+            color: var(--accent);
+        }
+
+        /* Modal & Calculator */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+        }
+
+            .modal-overlay.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+        .modal {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: var(--radius);
+            max-width: 550px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.8rem;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .calc-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 0.8rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+            .calc-row label {
+                font-size: 0.9rem;
+                color: var(--text-muted);
+            }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.8rem;
+            margin: 1.5rem 0;
+        }
+
+        .opt-check {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .calc-total {
+            font-family: var(--font-head);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-top: 1.5rem;
+            text-align: center;
+            border-top: 2px solid var(--accent);
+            padding-top: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            background: #050505;
+        }
+
+        .footer-btns {
+            margin-top: 1.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+
+        /* Utilities */
+        .hidden {
+            display: none;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-2 {
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 900px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 3.5rem 0;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">АЛЕКСАНДР КУДАШКИН</div>
+                <div class="nav-links">
+                    <a href="#about">Обо мне</a>
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#gear">Оборудование</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container animate-on-scroll">
+                <h1>Искусство видеть невидимое</h1>
+                <p>Alexander Kudashkin &mdash; оператор / режиссёр монтажа</p>
+                <button class="btn" onclick="openModal('priceModal')">Обсудить проект</button>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container animate-on-scroll">
+                <h2>Портфолио</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="best">Лучшее</button>
+                    <button class="filter-btn" data-filter="wedding">Свадьбы</button>
+                    <button class="filter-btn" data-filter="ad">Реклама</button>
+                    <button class="filter-btn" data-filter="interview">Интервью</button>
+                    <button class="filter-btn" data-filter="corp">Корпоративы</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="best wedding">
+                        <video preload="none" muted loop playsinline poster="https://picsum.photos/id/10/600/400?grayscale&fmt=webp" loading="lazy">
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+                        </video>
+                        <div class="portfolio-info">
+                            <h4>Свадебный день в Тоскане</h4>
+                            <span class="client">Заказчик: Анна и Дмитрий</span>
+                            <span class="link-placeholder">[Ссылка на проект]</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="best ad">
+                        <video preload="none" muted loop playsinline poster="https://picsum.photos/id/11/600/400?grayscale&fmt=webp" loading="lazy">
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+                        </video>
+                        <div class="portfolio-info">
+                            <h4>Рекламный ролик для Nike</h4>
+                            <span class="client">Заказчик: Nike Russia</span>
+                            <span class="link-placeholder">[Ссылка на проект]</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="interview">
+                        <video preload="none" muted loop playsinline poster="https://picsum.photos/id/12/600/400?grayscale&fmt=webp" loading="lazy">
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+                        </video>
+                        <div class="portfolio-info">
+                            <h4>Подкаст: История бренда</h4>
+                            <span class="client">Заказчик: 360tv.ru</span>
+                            <span class="link-placeholder">[Ссылка на проект]</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="corp">
+                        <video preload="none" muted loop playsinline poster="https://picsum.photos/id/13/600/400?grayscale&fmt=webp" loading="lazy">
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlaze.mp4" type="video/mp4">
+                        </video>
+                        <div class="portfolio-info">
+                            <h4>Корпоративный отчёт IT-компании</h4>
+                            <span class="client">Заказчик: TechGroup</span>
+                            <span class="link-placeholder">[Ссылка на проект]</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="wedding">
+                        <video preload="none" muted loop playsinline poster="https://picsum.photos/id/14/600/400?grayscale&fmt=webp" loading="lazy">
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMelts.mp4" type="video/mp4">
+                        </video>
+                        <div class="portfolio-info">
+                            <h4>Камерная свадьба в Москве</h4>
+                            <span class="client">Заказчик: Мария и Иван</span>
+                            <span class="link-placeholder">[Ссылка на проект]</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="ad interview best">
+                        <video preload="none" muted loop playsinline poster="https://picsum.photos/id/15/600/400?grayscale&fmt=webp" loading="lazy">
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+                        </video>
+                        <div class="portfolio-info">
+                            <h4>Документальный сюжет</h4>
+                            <span class="client">Заказчик: «Первый канал»</span>
+                            <span class="link-placeholder">[Ссылка на проект]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients">
+            <div class="container animate-on-scroll">
+                <h2>Партнёры и клиенты</h2>
+                <div class="clients-logos">
+                    <div class="client-logo">360tv.ru</div>
+                    <div class="client-logo">tnt-online.ru</div>
+                    <div class="client-logo">«Первый канал»</div>
+                    <div class="client-logo">«Россия 1»</div>
+                    <div class="client-logo">Nike</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" style="background: var(--surface);">
+            <div class="container animate-on-scroll">
+                <h2>Отзывы</h2>
+                <div class="reviews-carousel">
+                    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Съёмка прошла незаметно для гостей, а результат превзошёл ожидания. Кадры получились живыми и кинематографичными.»</p><div class="review-name">Анна К.</div></div>
+                    <div class="review-card"><div class="stars">★★★★☆</div><p class="review-text">«Профессиональный подход к рекламному ролику. Уложился в тайминг, монтаж чёткий. Рекомендую для коммерческих проектов.»</p><div class="review-name">Дмитрий, Marketing</div></div>
+                    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Снимали интервью для подкаста. Звук и картинка на высоте, правки внесены за 1 день. Спасибо!»</p><div class="review-name">Елена С.</div></div>
+                    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Александр очень точно чувствует настроение. Видео получилось не просто красивым, а душевным.»</p><div class="review-name">Михаил В.</div></div>
+                    <div class="review-card"><div class="stars">★★★★☆</div><p class="review-text">«Отличная работа на корпоративе. Быстро, без лишнего шума, все ключевые моменты были запечатлены.»</p><div class="review-name">HR-отдел, FinTech</div></div>
+                    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Второй раз работаем вместе. Стабильное качество, адекватные сроки и всегда на связи.»</p><div class="review-name">Олег Р.</div></div>
+                    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">«Спасибо за терпение и профессионализм. Даже в сложных погодных условиях получили идеальный материал.»</p><div class="review-name">Светлана и Артём</div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career">
+            <div class="container animate-on-scroll">
+                <h2>Карьера</h2>
+                <div class="timeline">
+                    <div class="timeline-item"><span class="year">2016</span>Начало работы на телевидении (корреспондент, оператор)</div>
+                    <div class="timeline-item"><span class="year">2018</span>Первая самостоятельная съёмка свадьбы</div>
+                    <div class="timeline-item"><span class="year">2020</span>Переход в рекламную съёмку (клиенты: Nike, local brands)</div>
+                    <div class="timeline-item"><span class="year">2022</span>Начало работы над подкастами и интервью</div>
+                    <div class="timeline-item"><span class="year">2026</span>Более 150 крупных проектов по всему миру</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container animate-on-scroll">
+                <div class="about-grid">
+                    <div>
+                        <img src="https://picsum.photos/id/1005/600/800?grayscale&fmt=webp" alt="Александр Кудашкин за работой" loading="lazy" decoding="async" style="border-radius: var(--radius); border: 1px solid var(--border);">
+                    </div>
+                    <div class="about-text">
+                        <h2>Обо мне</h2>
+                        <p>Оператор с 20-летним стажем на ТВ и в коммерческом продакшене. Снимал прямые эфиры, документальное кино, свадьбы, рекламные ролики, промо, корпоративы, выездные съёмки, подкасты, интервью и многое другое.</p>
+                        <p>Мой подход — минимальное вмешательство в происходящее, максимальная естественность в кадре. Люблю работать с сюжетами, где есть жизнь.</p>
+                        <p>Снимаю на cinema-камеры, использую только светлую оптику. Работаю один или с командой — под ваш бюджет.</p>
+                        <div class="stats">
+                            <div class="stat-box"><div class="stat-num">10 000+</div><div class="stat-label">проектов</div></div>
+                            <div class="stat-box"><div class="stat-num">20 лет</div><div class="stat-label">опыта</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gear" style="background: var(--surface);">
+            <div class="container animate-on-scroll">
+                <h2>Оборудование</h2>
+                <div class="gear-grid">
+                    <div class="gear-item"><img src="https://picsum.photos/id/0/300/200?grayscale&fmt=webp" alt="Sony FX6 Основная камера" loading="lazy"><h4>Sony FX6</h4><p>Основная камера</p></div>
+                    <div class="gear-item"><img src="https://picsum.photos/id/1/300/200?grayscale&fmt=webp" alt="Sigma 24-70mm f/2.8 Универсальный зум" loading="lazy"><h4>Sigma 24-70mm f/2.8</h4><p>Универсальный зум</p></div>
+                    <div class="gear-item"><img src="https://picsum.photos/id/2/300/200?grayscale&fmt=webp" alt="Aputure 300D Ключевой свет" loading="lazy"><h4>Aputure 300D</h4><p>Ключевой свет</p></div>
+                    <div class="gear-item"><img src="https://picsum.photos/id/3/300/200?grayscale&fmt=webp" alt="DJI RS3 Pro Стабилизатор" loading="lazy"><h4>DJI RS3 Pro</h4><p>Стабилизатор</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container animate-on-scroll">
+                <h2>Связаться</h2>
+                <div class="contact-wrapper">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                        <div class="form-group"><input type="email" name="email" placeholder="Email" required></div>
+                        <div class="form-group"><textarea name="message" rows="4" placeholder="Сообщение" required></textarea></div>
+                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">Согласен на обработку персональных данных (152-ФЗ)</label>
+                        </div>
+                        <button type="submit" class="btn" style="width:100%">Отправить</button>
+                        <div class="quick-contact">
+                            <a href="https://wa.me/79161234567" target="_blank" class="btn btn-outline">WhatsApp</a>
+                            <a href="https://t.me/alexander_kudashkin" target="_blank" class="btn btn-outline">Telegram</a>
+                            <a href="tel:+79161234567" class="btn btn-outline">Позвонить</a>
+                        </div>
+                    </form>
+                    <div class="qr-box">
+                        <p>Отсканируйте, чтобы открыть Telegram</p>
+                        <a href="https://t.me/alexander_kudashkin" target="_blank" title="Написать в Telegram">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://t.me/alexander_kudashkin&color=000000&bgcolor=ffffff" alt="QR-код Telegram" class="qr-img" loading="lazy">
+                        </a>
+                        <div class="qr-link">Кликните для перехода</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Александр Кудашкин, 2026. Все права защищены.</p>
+            <div class="footer-btns">
+                <button class="btn btn-outline" onclick="openModal('priceModal')">Стоимость услуг</button>
+                <button class="btn btn-outline" onclick="openModal('faqModal')">Что нужно знать</button>
+                <button class="btn btn-outline" onclick="openModal('refModal')">Приведи друга</button>
+                <button class="btn btn-outline" onclick="openModal('easterEgg')">🎥🎞️</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="faqModal">
+        <div class="modal">
+            <button class="close-modal" onclick="closeModal('faqModal')">&times;</button>
+            <h2>Что нужно знать перед съёмкой</h2>
+            <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                <li>Определитесь с форматом и стилем видео</li>
+                <li>Подготовьте референсы (примеры желаемого)</li>
+                <li>Составьте тайминг мероприятия</li>
+                <li>Проверьте локацию на предмет освещения</li>
+                <li>Обсудите список необходимых кадров</li>
+                <li>Не забудьте про питание для команды (если съёмка длительная)</li>
+            </ul>
+            <h3 style="margin-bottom: 0.5rem; margin-top: 1.5rem;">Юридическое & Организационное</h3>
+            <p style="color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Сроки сдачи:</strong> 1–2 недели с момента окончания съёмки.</p>
+            <p style="color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Правки:</strong> До 3 раундов включены в стоимость. Дополнительные оплачиваются отдельно.</p>
+            <p style="color: var(--text-muted); margin-bottom: 0.5rem;"><strong>Исходники:</strong> Передаются по запросу. Формат 4K 60fps ProRes/RAW. Хранение на сервере 3 месяца.</p>
+            <p style="color: var(--text-muted);"><strong>Депозит:</strong> 40% от суммы заказа для бронирования даты. Остаток в день съёмки или за 3 дня до сдачи.</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="priceModal">
+        <div class="modal">
+            <button class="close-modal" onclick="closeModal('priceModal')">&times;</button>
+            <h2>Калькулятор стоимости</h2>
+            <div class="calc-row"><label>Свадьба (часов):</label><input type="number" id="calc-wed" min="0" value="0"></div>
+            <div class="calc-row"><label>Реклама (дней):</label><input type="number" id="calc-ad" min="0" value="0"></div>
+            <div class="calc-row"><label>Интервью (часов):</label><input type="number" id="calc-int" min="0" value="0"></div>
+            <div class="calc-row"><label>Корпоратив (часов):</label><input type="number" id="calc-corp" min="0" value="0"></div>
+            <h3 style="margin: 1.5rem 0 0.5rem; font-size: 1rem;">Дополнительные опции</h3>
+            <div class="options-grid">
+                <label class="opt-check"><input type="checkbox" id="opt-travel"> Выезд за город (+15%)</label>
+                <label class="opt-check"><input type="checkbox" id="opt-urgent"> Срочный монтаж (+20%)</label>
+                <label class="opt-check"><input type="checkbox" id="opt-color"> Цветокор / Саунд-дизайн (+10%)</label>
+                <label class="opt-check"><input type="checkbox" id="opt-second"> Второй оператор (+30%)</label>
+            </div>
+            <div class="calc-total" id="calc-total">0 ₽</div>
+            <button class="btn mt-2" style="width:100%" onclick="closeModal('priceModal')">Обсудить расчёт</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="refModal">
+        <div class="modal" style="text-align:center;">
+            <button class="close-modal" onclick="closeModal('refModal')">&times;</button>
+            <h2>Приведи друга</h2>
+            <p style="margin-bottom: 1rem; color: var(--text-muted);">Ваш персональный промокод:</p>
+            <div style="font-family: var(--font-head); font-size: 1.8rem; font-weight: 700; color: var(--accent); margin-bottom: 1rem; user-select: all; cursor: pointer; border: 2px dashed var(--accent); padding: 0.5rem 1rem; border-radius: var(--radius); display: inline-block;">FRIEND123</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Дайте его другу, и он получит скидку 10% на первый заказ. Вы тоже получите бонус!</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="easterEgg">
+        <div class="modal" style="text-align:center;">
+            <button class="close-modal" onclick="closeModal('easterEgg')">&times;</button>
+            <h2>🎥🎞️ Перетащи меня на плёнку!</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Секретная скидка активирована!</p>
+            <div style="font-family: var(--font-head); font-size: 1.8rem; font-weight: 700; color: var(--accent); margin-bottom: 1rem; user-select: all; border: 2px dashed var(--accent); padding: 0.5rem 1rem; border-radius: var(--radius); display: inline-block;">TRIPLE15</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Промокод на скидку 15% при заказе съёмки.</p>
+        </div>
+    </div>
+
+    <script>
+        // Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // Modals
+        function openModal(id) { document.getElementById(id).classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeModal(id) { document.getElementById(id).classList.remove('active'); document.body.style.overflow = ''; }
+        document.querySelectorAll('.modal-overlay').forEach(m => {
+            m.addEventListener('click', e => { if (e.target === m) closeModal(m.id); });
+        });
+
+        // Portfolio Hover Video
+        document.querySelectorAll('.portfolio-item video').forEach(v => {
+            v.parentElement.addEventListener('mouseenter', () => v.play().catch(() => { }));
+            v.parentElement.addEventListener('mouseleave', () => { v.pause(); v.currentTime = 0; });
+        });
+
+        // Portfolio Filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.portfolio-item').forEach(item => {
+                    item.style.display = (filter === 'all' || item.dataset.category.includes(filter)) ? 'block' : 'none';
+                });
+            });
+        });
+
+        // Calculator
+        const calcInputs = document.querySelectorAll('#priceModal input[type="number"]');
+        const calcChecks = document.querySelectorAll('#priceModal input[type="checkbox"]');
+        [...calcInputs, ...calcChecks].forEach(el => el.addEventListener('input', updateCalc));
+
+        function updateCalc() {
+            let base = 0;
+            base += (parseInt(document.getElementById('calc-wed').value) || 0) * 9375;
+            base += (parseInt(document.getElementById('calc-ad').value) || 0) * 55000;
+            base += (parseInt(document.getElementById('calc-int').value) || 0) * 12000;
+            base += (parseInt(document.getElementById('calc-corp').value) || 0) * 30000;
+
+            let multiplier = 1;
+            if (document.getElementById('opt-travel').checked) multiplier += 0.15;
+            if (document.getElementById('opt-urgent').checked) multiplier += 0.20;
+            if (document.getElementById('opt-color').checked) multiplier += 0.10;
+            if (document.getElementById('opt-second').checked) multiplier += 0.30;
+
+            const total = Math.round(base * multiplier);
+            document.getElementById('calc-total').textContent = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 }).format(total);
+        }
+
+        // Form Validation & Honeypot
+        document.getElementById('contactForm').addEventListener('submit', e => {
+            e.preventDefault();
+            if (document.querySelector('input[name="website"]').value) return;
+            if (!document.getElementById('consent').checked) return alert('Необходимо согласие на обработку данных');
+            alert('Спасибо! Сообщение отправлено. Свяжусь с вами в течение часа.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
